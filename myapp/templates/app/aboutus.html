@@ -1,0 +1,368 @@
+{% extends "app/base.html" %} {% block content %} {% load static %}
+
+<header>
+  <style>
+    #intro {
+      background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+      height: 100vh;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #intro {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+  </style>
+
+  <!-- <div id="intro" class="bg-image shadow-2-strong"> -->
+    <!-- <div
+      class="mask d-flex align-items-center h-100"
+      style="background-color: rgba(0, 0, 0, 0.8)"
+    > -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-8">
+            <div class="container">
+              <div class="row justify-content-center">
+                <!-- Section: Team v.3 -->
+                <hr class="my-5" />
+                <h2 class="font-weight-bold text-center h1 my-3">
+                  <strong>Our amazing team</strong>
+                </h2>
+                <hr class="my-5" />
+                <section
+                  id="team"
+                  class="section mx-auto pt-5 bg-color rounded-5 team-section pb-4 wow fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  <!-- Section heading -->
+
+                  <!-- Section description -->
+                  <p class="text-center grey-text mb-5 mx-auto w-responsive">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fugit, error amet numquam iure provident voluptate esse
+                    quasi, veritatis totam voluptas nostrum quisquam eum porro a
+                    pariatur accusamus veniam.
+                  </p>
+
+                  <!-- Grid row -->
+                  <div class="row mb-lg-4 text-center text-md-left">
+                    <!-- Grid column -->
+                    <div
+                      class="col-lg-6 col-md-12 mb-4 d-flex justify-content-between"
+                    >
+                      <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
+                            class="z-depth-1"
+                            alt="First sample avatar image"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 float-right">
+                        <h4><strong>John Doe</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4">
+                          Web Designer
+                        </h6>
+                        <p class="grey-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Quod eos id officiis hic tenetur.
+                        </p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"
+                          ><i class="fab fa-facebook-f"> </i
+                        ></a>
+                        <!-- Twitter -->
+                        <a class="p-2 m-2 fa-lg tw-ic"
+                          ><i class="fab fa-twitter"> </i
+                        ></a>
+                        <!-- Dribbble -->
+                        <a class="p-2 m-2 fa-lg dribbble-ic"
+                          ><i class="fab fa-dribbble"> </i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div
+                      class="col-lg-6 col-md-12 mb-4 d-flex justify-content-between"
+                    >
+                      <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                            class="z-depth-1"
+                            alt="Second sample avatar image"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 float-right">
+                        <h4><strong>Maria Kate</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4">
+                          Photographer
+                        </h6>
+                        <p class="grey-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Quod eos id officiis hic tenetur.
+                        </p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"
+                          ><i class="fab fa-facebook-f"> </i
+                        ></a>
+                        <!-- YouTube -->
+                        <a class="p-2 m-2 fa-lg yt-ic"
+                          ><i class="fab fa-youtube"> </i
+                        ></a>
+                        <!-- Instagram -->
+                        <a class="p-2 m-2 fa-lg ins-ic"
+                          ><i class="fab fa-instagram"> </i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!-- Grid row -->
+
+                  <!-- Grid row -->
+                  <div class="row text-center text-md-left">
+                    <!-- Grid column -->
+                    <div
+                      class="col-lg-6 col-md-12 mb-4 d-flex justify-content-between"
+                    >
+                      <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg"
+                            class="z-depth-1"
+                            alt="Fourth sample avatar image"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 float-right">
+                        <h4><strong>Anna Deynah</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4">
+                          Web Developer
+                        </h6>
+                        <p class="grey-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Quod eos id officiis hic tenetur.
+                        </p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"
+                          ><i class="fab fa-facebook-f"> </i
+                        ></a>
+                        <!-- Twitter -->
+                        <a class="p-2 m-2 fa-lg tw-ic"
+                          ><i class="fab fa-twitter"> </i
+                        ></a>
+                        <!-- GitHub -->
+                        <a class="p-2 m-2 fa-lg git-ic"
+                          ><i class="fab fa-github"> </i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div
+                      class="col-lg-6 col-md-12 mb-4 d-flex justify-content-between"
+                    >
+                      <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
+                            class="z-depth-1"
+                            alt="Fifth sample avatar image"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 float-right">
+                        <h4><strong>Sarah Melyah</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4">
+                          Front-end Developer
+                        </h6>
+                        <p class="grey-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Quod eos id officiis hic tenetur.
+                        </p>
+
+                        <!-- Google + -->
+                        <a class="p-2 m-2 fa-lg gplus-ic"
+                          ><i class="fab fa-google-plus-g"> </i
+                        ></a>
+                        <!-- LinkedIn -->
+                        <a class="p-2 m-2 fa-lg li-ic"
+                          ><i class="fab fa-linkedin-in"> </i
+                        ></a>
+                        <!-- Email -->
+                        <a class="p-2 m-2 fa-lg email-ic"
+                          ><i class="fas fa-envelope"> </i
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!-- Grid row -->
+                </section>
+                <!-- Section: Team v.3 -->
+
+                <hr class="my-5" />
+                <h2 class="font-weight-bold text-center h1 my-3">
+                  <strong>We create awesome products</strong>
+                </h2>
+                <hr class="my-5" />
+                <!-- Section: Features v.1 -->
+                <section
+                  id="products"
+                  class="text-center wow px-5 py-5 rounded-5 bg-color2 fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  <!-- Section description -->
+                  <p
+                    class="text-center grey-text mb-5 mx-auto w-responsive lead"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </p>
+
+                  <!-- Grid row -->
+                  <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-4 mb-4">
+                      <i class="fas fa-4x fa-chart-area pink-text"></i>
+                      <h4 class="font-weight-bold my-4">Analytics</h4>
+                      <p class="grey-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Reprehenderit maiores nam, aperiam minima
+                        assumenda deleniti hic.
+                      </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mb-4">
+                      <i class="fas fa-4x fa-pencil-alt cyan-text"></i>
+                      <h4 class="font-weight-bold my-4">Design</h4>
+                      <p class="grey-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Reprehenderit maiores nam, aperiam minima
+                        assumenda deleniti hic.
+                      </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mb-4">
+                      <i class="fas fa-4x fa-laptop indigo-text"></i>
+                      <h4 class="font-weight-bold my-4">Development</h4>
+                      <p class="grey-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Reprehenderit maiores nam, aperiam minima
+                        assumenda deleniti hic.
+                      </p>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!-- Grid row -->
+                </section>
+                <!-- Section: Features v.1 -->
+
+                <hr class="my-5" />
+                <h1 class="font-weight-bold text-center h1 my-3">
+                  <strong>Our work</strong>
+                </h1>
+                <hr class="my-5" />
+
+                <!-- Section: Gallery -->
+                <section
+                  id="gallery"
+                  class="section wow bg-color py-5 rounded-5 fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  <!-- Section heading -->
+
+                  <!-- Section description -->
+                  <p class="text-center grey-text mb-5 mx-auto w-responsive">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </p>
+
+                  <div class="row pb-4">
+                    <div class="col-md-12">
+                      <div id="mdb-lightbox-ui"></div>
+
+                      <div class="row mdb-lightbox">
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(43).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(40).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(14).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(42).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+
+                        <figure class="col-md-4">
+                          <img
+                            src="https://mdbootstrap.com/img/Photos/Horizontal/People/12-col/img%20(132).jpg"
+                            class="rounded-5 border border-2 img-fluid z-depth-1"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <hr />
+                <!-- /Section: Gallery -->
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{%endblock%}

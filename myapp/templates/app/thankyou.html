@@ -1,0 +1,26 @@
+{% extends "app/base.html" %}
+{% block content %}
+{% load static %}
+<div id="intro" class="bg-image shadow-2-strong">
+    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container bg-white rounded-5 col-6 p-5">
+            <div class="bg-secondary bg-opacity-25 rounded-5">
+                <div class="row justify-content-center">
+                    <div class="jumbotron text-center">
+                        <h1 class="display-3">Thank You!</h1>
+                        <p class="lead"><strong>Thanks for your feedback</strong></p>
+                        <hr>
+                        <p>
+                            Having trouble? <a href="{% url 'contactpage' %}">Contact us</a>
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-sm" href="{% url 'indexpage' %}" role="button">Continue to
+                                homepage</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
